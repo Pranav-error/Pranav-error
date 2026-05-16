@@ -108,25 +108,60 @@ fun_fact: I debug with console.log
 
 ## 🚀 Featured Projects
 
-<div align="center">
-
-<a href="https://github.com/Pranav-error/OrbitClean-2.0">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=pranav-error&repo=OrbitClean-2.0&theme=tokyonight&hide_border=true&description_lines_count=2" />
-</a>
-&nbsp;
-<a href="https://github.com/Pranav-error/chatbot">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=pranav-error&repo=chatbot&theme=tokyonight&hide_border=true" />
-</a>
-
-<a href="https://github.com/Pranav-error/cloudsim-cloud-simulation">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=pranav-error&repo=cloudsim-cloud-simulation&theme=tokyonight&hide_border=true" />
-</a>
-&nbsp;
-<a href="https://github.com/Pranav-error/Medsam_modified">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=pranav-error&repo=Medsam_modified&theme=tokyonight&hide_border=true" />
-</a>
-
-</div>
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3 align="center">🛰️ OrbitClean 2.0</h3>
+      <div align="center">
+        <a href="https://github.com/Pranav-error/OrbitClean-2.0">
+          <img src="https://img.shields.io/badge/View%20Repo-%23121011?style=for-the-badge&logo=github&logoColor=white"/>
+        </a>
+        <p align="center">Space-Enabled Waste Intelligence — Sentinel-2 dump detection, XGBoost risk prediction, route optimization with FastAPI + Next.js</p>
+        <img src="https://img.shields.io/github/languages/top/Pranav-error/OrbitClean-2.0?style=flat-square&color=1f6feb"/>
+        <img src="https://img.shields.io/github/stars/Pranav-error/OrbitClean-2.0?style=flat-square&color=f0e68c"/>
+        <img src="https://img.shields.io/github/forks/Pranav-error/OrbitClean-2.0?style=flat-square&color=58a6ff"/>
+      </div>
+    </td>
+    <td width="50%" valign="top">
+      <h3 align="center">🤖 Arbix</h3>
+      <div align="center">
+        <a href="https://github.com/Pranav-error/Arbix">
+          <img src="https://img.shields.io/badge/View%20Repo-%23121011?style=for-the-badge&logo=github&logoColor=white"/>
+        </a>
+        <p align="center">AI-powered cross-exchange arbitrage trading system on BNB Chain — automated profit detection across decentralized exchanges</p>
+        <img src="https://img.shields.io/github/languages/top/Pranav-error/Arbix?style=flat-square&color=1f6feb"/>
+        <img src="https://img.shields.io/github/stars/Pranav-error/Arbix?style=flat-square&color=f0e68c"/>
+        <img src="https://img.shields.io/github/forks/Pranav-error/Arbix?style=flat-square&color=58a6ff"/>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3 align="center">📅 Smart Attendance Predictor</h3>
+      <div align="center">
+        <a href="https://github.com/Pranav-error/smart-attendance-predictor">
+          <img src="https://img.shields.io/badge/View%20Repo-%23121011?style=for-the-badge&logo=github&logoColor=white"/>
+        </a>
+        <p align="center">Full-stack Flask + React app with JWT auth, risk analysis, and AI-powered attendance shortage prediction</p>
+        <img src="https://img.shields.io/github/languages/top/Pranav-error/smart-attendance-predictor?style=flat-square&color=1f6feb"/>
+        <img src="https://img.shields.io/github/stars/Pranav-error/smart-attendance-predictor?style=flat-square&color=f0e68c"/>
+        <img src="https://img.shields.io/github/forks/Pranav-error/smart-attendance-predictor?style=flat-square&color=58a6ff"/>
+      </div>
+    </td>
+    <td width="50%" valign="top">
+      <h3 align="center">☁️ CloudSim Simulation</h3>
+      <div align="center">
+        <a href="https://github.com/Pranav-error/cloudsim-cloud-simulation">
+          <img src="https://img.shields.io/badge/View%20Repo-%23121011?style=for-the-badge&logo=github&logoColor=white"/>
+        </a>
+        <p align="center">CloudSim 3.0 framework — cloud computing infrastructure simulation with custom experiments and power-aware VM allocation</p>
+        <img src="https://img.shields.io/github/languages/top/Pranav-error/cloudsim-cloud-simulation?style=flat-square&color=1f6feb"/>
+        <img src="https://img.shields.io/github/stars/Pranav-error/cloudsim-cloud-simulation?style=flat-square&color=f0e68c"/>
+        <img src="https://img.shields.io/github/forks/Pranav-error/cloudsim-cloud-simulation?style=flat-square&color=58a6ff"/>
+      </div>
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -134,9 +169,9 @@ fun_fact: I debug with console.log
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=pranav-error&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&show_icons=true&rank_icon=github" height="180"/>
+<img src="https://github-readme-stats.vercel.app/api?username=pranav-error&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&show_icons=true&rank_icon=github&cache_seconds=86400" height="180"/>
 &nbsp;&nbsp;
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=pranav-error&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&layout=compact" height="180"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=pranav-error&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&layout=compact&cache_seconds=86400" height="180"/>
 
 </div>
 
