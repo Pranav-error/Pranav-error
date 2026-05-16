@@ -1,29 +1,139 @@
-# 💫 About Me:
-<br><br>Hi! I'm a passionate developer with experience in both frontend and backend development. I enjoy building innovative applications and have worked on projects ranging from consumer-farmer connection platforms to university event apps. I'm proficient in C, C++, Node.js, and Flutter, and I love tackling challenges, especially in hackathons where I frequently participate. Currently, I’m exploring more in web development and always excited to collaborate on impactful projects!<br><br><br>
+<div align="center">
 
+<!-- Animated banner -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1f6feb,100:58a6ff&height=200&section=header&text=Sai%20Pranav&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full%20Stack%20Developer%20%7C%20Flutter%20%7C%20Cloud%20Enthusiast&descAlignY=60&descSize=18" width="100%"/>
 
-## 🌐 Socials:
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/https://www.instagram.com/saipranav370/profilecard/?igsh=MXVyZ2lzdmJrdms4dw==) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/sai-pranav-005b14296?utm_source=share&utm_campaign=share_via&utm_content=pro) 
+<!-- Typing SVG -->
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=58A6FF&center=true&vCenter=true&random=false&width=600&lines=Hey+there!+I'm+Sai+Pranav+%F0%9F%91%8B;Full+Stack+%26+Mobile+Developer;Cloud+Computing+Enthusiast;Hackathon+Lover+%F0%9F%8F%86;Always+learning+something+new+%F0%9F%9A%80" alt="Typing SVG" />
+</a>
 
-# 💻 Tech Stack:
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase) ![GithubPages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) ![Adobe XD](https://img.shields.io/badge/Adobe%20XD-470137?style=for-the-badge&logo=Adobe%20XD&logoColor=#FF61F6) ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Raspberry Pi](https://img.shields.io/badge/-RaspberryPi-C51A4A?style=for-the-badge&logo=Raspberry-Pi) ![Twilio](https://img.shields.io/badge/Twilio-F22F46?style=for-the-badge&logo=Twilio&logoColor=white) ![TOR](https://img.shields.io/badge/tor-%237E4798.svg?style=for-the-badge&logo=tor-project&logoColor=white) ![Portfolio](https://img.shields.io/badge/Portfolio-%23000000.svg?style=for-the-badge&logo=firefox&logoColor=#FF7139) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=pranav-error&theme=dark&hide_border=false&include_all_commits=false&count_private=false)<br/>
-![](https://github-readme-streak-stats.herokuapp.com/?user=pranav-error&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=pranav-error&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
+<br/>
 
-### 🔝 Top Contributed Repo
-![](https://github-contributor-stats.vercel.app/api?username=pranav-error&limit=5&theme=dark&combine_all_yearly_contributions=true)
+<!-- Profile views & followers -->
+[![](https://visitcount.itsvg.in/api?id=pranav-error&label=Profile%20Views&color=1&icon=5&pretty=true)](https://visitcount.itsvg.in)
+&nbsp;
+[![GitHub followers](https://img.shields.io/github/followers/Pranav-error?label=Followers&style=social)](https://github.com/Pranav-error)
+
+</div>
 
 ---
-[![](https://visitcount.itsvg.in/api?id=pranav-error&icon=0&color=0)](https://visitcount.itsvg.in)
 
-## 🐍 Contribution Snake
+## 💫 About Me
+
+```yaml
+name: Sai Pranav
+location: India 🇮🇳
+role: Full Stack Developer & Mobile Engineer
+education: Computer Science
+focus:
+  - Cloud Computing & Simulation
+  - Cross-platform Mobile Apps (Flutter)
+  - Web Development (React, Node.js)
+  - AI / ML Integration
+currently_learning: [Cloud Architecture, Deep Learning, DevOps]
+hackathons: frequent participant 🏆
+fun_fact: I debug with console.log and I'm not ashamed 😄
+```
+
+---
+
+## 🌐 Connect With Me
+
+<div align="center">
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sai-pranav-005b14296)
+[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/saipranav370/)
+[![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Pranav-error)
+
+</div>
+
+---
+
+## 🛠️ Tech Stack
+
+### Languages
+<div align="center">
+
+[![My Skills](https://skillicons.dev/icons?i=java,c,cpp,python,js,dart,php&theme=dark)](https://skillicons.dev)
+
+</div>
+
+### Frontend & Mobile
+<div align="center">
+
+[![My Skills](https://skillicons.dev/icons?i=react,flutter,html,css,figma&theme=dark)](https://skillicons.dev)
+
+</div>
+
+### Backend & Tools
+<div align="center">
+
+[![My Skills](https://skillicons.dev/icons?i=nodejs,firebase,mysql,git,github,postman,raspberrypi&theme=dark)](https://skillicons.dev)
+
+</div>
+
+---
+
+## 📊 GitHub Stats
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=pranav-error&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&show_icons=true&rank_icon=github" height="180"/>
+&nbsp;&nbsp;
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=pranav-error&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&layout=compact" height="180"/>
+
+</div>
+
+<div align="center">
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=pranav-error&theme=tokyonight&hide_border=true" width="70%"/>
+
+</div>
+
+---
+
+## 🏆 GitHub Trophies
+
+<div align="center">
+
+[![trophy](https://github-profile-trophy.vercel.app/?username=pranav-error&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&column=7)](https://github.com/ryo-ma/github-profile-trophy)
+
+</div>
+
+---
+
+## 📈 Contribution Activity
+
+<div align="center">
+
+[![Pranav's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=pranav-error&theme=tokyo-night&hide_border=true&area=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+
+</div>
+
+---
+
+## 💡 Dev Quote of the Day
+
+<div align="center">
+
+[![Readme Quotes](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)](https://github.com/piyushsuthar/github-readme-quotes)
+
+</div>
+
+---
+
+## 🐍 Watch the Snake Eat My Contributions
+
+<div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Pranav-error/Pranav-error/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Pranav-error/Pranav-error/output/github-snake.svg" />
-  <img alt="github-snake" src="https://raw.githubusercontent.com/Pranav-error/Pranav-error/output/github-snake.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Pranav-error/Pranav-error/output/github-snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Pranav-error/Pranav-error/output/github-snake.svg"/>
+  <img alt="github-snake" src="https://raw.githubusercontent.com/Pranav-error/Pranav-error/output/github-snake.svg" width="100%"/>
 </picture>
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+</div>
+
+<!-- Footer wave -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:58a6ff,50:1f6feb,100:0d1117&height=120&section=footer" width="100%"/>
