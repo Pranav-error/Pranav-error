@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Animated banner -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1f6feb,100:58a6ff&height=200&section=header&text=Sai%20Pranav&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full%20Stack%20Developer%20%7C%20Flutter%20%7C%20Cloud%20Enthusiast&descAlignY=60&descSize=18" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1f6feb,100:58a6ff&height=200&section=header&text=Sai%20Pranav&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Developer%20%7C%20Cloud%20Enthusiast%20%7C%20Hackathon%20Lover&descAlignY=60&descSize=18" width="100%"/>
 
 <!-- Typing SVG -->
 <a href="https://git.io/typing-svg">
@@ -24,11 +24,11 @@
 ```yaml
 name: Sai Pranav
 location: India 🇮🇳
-role: Full Stack Developer & Mobile Engineer
+role: Developer
 education: Computer Science
 focus:
   - Cloud Computing & Simulation
-  - Cross-platform Mobile Apps (Flutter)
+  - Mobile App Development
   - Web Development (React, Node.js)
   - AI / ML Integration
 currently_learning: [Cloud Architecture, Deep Learning, DevOps]
