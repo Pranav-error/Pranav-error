@@ -5,7 +5,7 @@
 
 <!-- Typing SVG -->
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=58A6FF&center=true&vCenter=true&random=false&width=600&lines=Hey+there!+I'm+Sai+Pranav+%F0%9F%91%8B;Full+Stack+%26+Mobile+Developer;Cloud+Computing+Enthusiast;Hackathon+Lover+%F0%9F%8F%86;Always+learning+something+new+%F0%9F%9A%80" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=58A6FF&center=true&vCenter=true&random=false&width=600&lines=Hey+there!+I'm+Sai+Pranav+%F0%9F%91%8B;Full+Stack+Developer;Cloud+Computing+Enthusiast;Hackathon+Lover+%F0%9F%8F%86;Always+learning+something+new+%F0%9F%9A%80" alt="Typing SVG" />
 </a>
 
 <br/>
@@ -42,7 +42,7 @@ fun_fact: I debug with console.log and I'm not ashamed 😄
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sai-pranav-005b14296)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rsaipranav/)
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/saipranav370/)
 [![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Pranav-error)
 
