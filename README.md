@@ -59,12 +59,39 @@ fun_fact: I debug with console.log
 
 - 🔭 &nbsp;Currently working on **Cloud Simulation & AI projects**
 - 🌱 &nbsp;Learning **Cloud Architecture, Deep Learning & DevOps**
+- 🌍 &nbsp;Contributing upstream to **pgmoneta, GRASS GIS, Kubernetes & Flux**
 - 👯 &nbsp;Open to collaborate on **Open Source & Hackathons**
 - 💬 &nbsp;Ask me about **Java, Python, React, Node.js**
 - 🌐 &nbsp;Check out my portfolio: **[saipranav.me](https://saipranav.me)**
 - ⚡ &nbsp;Fun fact: I love the **rush of hackathons!**
 
 <br clear="right"/>
+
+---
+
+## 🌍 Open Source Contributions
+
+Upstream work on C and Python projects — mostly memory-safety and correctness fixes found by
+running static analysis the projects' CI does not, each with a reproduction and a regression
+test where the project supports one.
+
+<div align="center">
+
+| Project | Contribution | Status |
+|:--|:--|:--|
+| **[pgmoneta](https://github.com/pgmoneta/pgmoneta)** | Double frees, use-after-free, unchecked allocations, an off-by-one stack overflow, and a baseline-gated cppcheck CI job | **7 merged** · 4 open |
+| **[Kubernetes](https://github.com/kubernetes/website)** | Docs fixes, and a style guide section defining *deprecated* vs *no longer served* vs *removed* for APIs | **1 merged** · 4 open |
+| **[GRASS GIS](https://github.com/OSGeo/grass)** | Null pointer dereference in the vector library, a null *function pointer* crash in `v.to.rast`, 64-bit cell counters, and unbounded environment growth in the runtime setup | 4 open |
+| **[pgagroal](https://github.com/pgagroal/pgagroal) · [pgexporter](https://github.com/pgexporter/pgexporter) · [pgvictoria](https://github.com/pgvictoria/pgvictoria)** | The same fixes cross-ported, at the lead maintainer's request | 12 open |
+| **[Flux](https://github.com/fluxcd/source-controller)** | Removed unsupported anonymous access for Azure buckets from the docs and code | 1 open |
+| **[GNU Radio](https://github.com/gnuradio/gnuradio)** | QA test covering the real-time scheduling bindings | 1 open |
+
+</div>
+
+Also **[ml4sci-tasks](https://github.com/Pranav-error/ml4sci-tasks)** — ML4SCI evaluation tasks:
+gravitational lensing substructure classification (ResNet18, 0.9996 accuracy, published
+alongside the leakage-control check that interrogates it), historical-text OCR with paired
+bootstrap significance testing, and radio interferometry preprocessing.
 
 ---
 
