@@ -77,16 +77,34 @@ test where the project supports one.
 
 <div align="center">
 
+<img src="https://img.shields.io/github/issues-search?query=author%3APranav-error%20is%3Apr%20is%3Amerged&label=PRs%20merged&color=8957e5&style=for-the-badge&logo=github" />
+&nbsp;
+<img src="https://img.shields.io/github/issues-search?query=author%3APranav-error%20is%3Apr%20is%3Aopen&label=PRs%20open&color=1f6feb&style=for-the-badge&logo=github" />
+&nbsp;
+<img src="https://img.shields.io/github/issues-search?query=author%3APranav-error%20is%3Aissue%20is%3Apublic&label=issues%20filed&color=238636&style=for-the-badge&logo=github" />
+
+</div>
+
+<!-- OSS:START -->
+
+<div align="center">
+
 | Project | Contribution | Status |
 |:--|:--|:--|
 | **[pgmoneta](https://github.com/pgmoneta/pgmoneta)** | Double frees, use-after-free, unchecked allocations, an off-by-one stack overflow, and a baseline-gated cppcheck CI job | **7 merged** · 4 open |
-| **[Kubernetes](https://github.com/kubernetes/website)** | Docs fixes, and a style guide section defining *deprecated* vs *no longer served* vs *removed* for APIs | **1 merged** · 4 open |
-| **[GRASS GIS](https://github.com/OSGeo/grass)** | Null pointer dereference in the vector library, a null *function pointer* crash in `v.to.rast`, 64-bit cell counters, and unbounded environment growth in the runtime setup | 4 open |
-| **[pgagroal](https://github.com/pgagroal/pgagroal) · [pgexporter](https://github.com/pgexporter/pgexporter) · [pgvictoria](https://github.com/pgvictoria/pgvictoria)** | The same fixes cross-ported, at the lead maintainer's request | 12 open |
-| **[Flux](https://github.com/fluxcd/source-controller)** | Removed unsupported anonymous access for Azure buckets from the docs and code | 1 open |
-| **[GNU Radio](https://github.com/gnuradio/gnuradio)** | QA test covering the real-time scheduling bindings | 1 open |
+| **[simulation](https://github.com/Sakram-Arch/simulation)** | Removed credentials that were committed to the repository, and fixed the migration integration tests | **2 merged** · 4 open |
+| **[website](https://github.com/kubernetes/website)** | Docs fixes, and a style guide section defining *deprecated* vs *no longer served* vs *removed* for APIs | **1 merged** · 4 open |
+| **[pgagroal](https://github.com/pgagroal/pgagroal)** | Memory-safety fixes cross-ported at the lead maintainer's request | 5 open |
+| **[grass](https://github.com/OSGeo/grass)** | Null pointer dereference in the vector library, a null *function pointer* crash in `v.to.rast`, 64-bit cell counters, and unbounded environment growth in the runtime setup | 4 open |
+| **[pgexporter](https://github.com/pgexporter/pgexporter)** | Memory-safety fixes cross-ported at the lead maintainer's request | 4 open |
+| **[pgvictoria](https://github.com/pgvictoria/pgvictoria)** | Memory-safety fixes cross-ported at the lead maintainer's request | 3 open |
+| **[DotDev](https://github.com/DotDev-Club/DotDev)** | A code repository designed to show the best GitHub has to offer. | **1 merged** |
+| **[source-controller](https://github.com/fluxcd/source-controller)** | Removed unsupported anonymous access for Azure buckets from the docs and code | 1 open |
+| **[gnuradio](https://github.com/gnuradio/gnuradio)** | QA test covering the real-time scheduling bindings | 1 open |
 
 </div>
+
+<!-- OSS:END -->
 
 Also **[ml4sci-tasks](https://github.com/Pranav-error/ml4sci-tasks)** — ML4SCI evaluation tasks:
 gravitational lensing substructure classification (ResNet18, 0.9996 accuracy, published

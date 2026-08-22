@@ -1,0 +1,40 @@
+name: Update Open Source Contributions
+
+on:
+  schedule:
+    - cron: "30 2 * * *"   # daily, a little after midnight UTC
+  workflow_dispatch:        # allows manual trigger
+  push:
+    branches:
+      - main
+    paths:
+      - scripts/update_oss.py
+      - .github/workflows/update-oss.yml
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Rebuild the contributions table
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OSS_USER: ${{ github.repository_owner }}
+        run: python3 scripts/update_oss.py
+
+      - name: Commit if it changed
+        run: |
+          if [ -n "$(git status --porcelain README.md)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add README.md
+            git commit -m "Update open source contributions table"
+            git push
+          else
+            echo "no change"
+          fi
