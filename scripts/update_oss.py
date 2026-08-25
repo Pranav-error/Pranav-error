@@ -4,6 +4,12 @@ Counts pull requests authored by the profile owner across every repository on
 GitHub, groups them by repository and rewrites the block between the
 OSS:START and OSS:END markers. New projects appear on their own, so the table
 keeps up without being edited by hand.
+
+A pull request counts as merged when GitHub says so, and also when its commits
+were landed by hand. Some maintainers rebase a contribution onto the default
+branch themselves and then close the pull request, which leaves merged_at unset
+even though the work shipped; those are recovered by looking for the commit
+subjects on the default branch.
 """
 
 import json
@@ -17,6 +23,9 @@ TOKEN = os.environ.get("GITHUB_TOKEN")
 README = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "README.md")
 START, END = "<!-- OSS:START -->", "<!-- OSS:END -->"
 MAX_ROWS = 10
+
+# repo -> commit subjects on its default branch, filled in on first use.
+_LANDED_CACHE = {}
 
 # What the work in a repository actually was. Repositories without an entry
 # fall back to their own GitHub description, so a new project still shows up.
@@ -41,6 +50,45 @@ def api(url):
         return json.load(response)
 
 
+def landed_subjects(repo):
+    """Commit subjects authored by USER on the default branch of a repository."""
+    if repo not in _LANDED_CACHE:
+        subjects = set()
+        try:
+            result = api(
+                "https://api.github.com/search/commits"
+                f"?q=repo%3A{repo}+author%3A{USER}&per_page=100"
+            )
+            for item in result.get("items", []):
+                message = (item.get("commit") or {}).get("message", "")
+                subject = message.splitlines()[0].strip() if message else ""
+                if subject:
+                    subjects.add(subject)
+        except (urllib.error.URLError, ValueError):
+            # Leave the set empty rather than failing the run: the worst case is
+            # the old behaviour, where a hand-landed pull request is not counted.
+            pass
+        _LANDED_CACHE[repo] = subjects
+    return _LANDED_CACHE[repo]
+
+
+def was_landed_by_hand(repo, number):
+    """True when a closed, unmerged pull request's commits are on the default branch."""
+    subjects = landed_subjects(repo)
+    if not subjects:
+        return False
+    try:
+        commits = api(f"https://api.github.com/repos/{repo}/pulls/{number}/commits?per_page=100")
+    except (urllib.error.URLError, ValueError):
+        return False
+    for commit in commits:
+        message = (commit.get("commit") or {}).get("message", "")
+        subject = message.splitlines()[0].strip() if message else ""
+        if subject and subject in subjects:
+            return True
+    return False
+
+
 def collect():
     """Return {repo: {"merged": n, "open": n}} for every repo with a PR."""
     repos = {}
@@ -58,6 +106,8 @@ def collect():
                 counts["merged"] += 1
             elif item["state"] == "open":
                 counts["open"] += 1
+            elif was_landed_by_hand(repo, item["number"]):
+                counts["merged"] += 1
         if len(items) < 100:
             break
         page += 1
