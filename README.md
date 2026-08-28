@@ -95,10 +95,10 @@ test where the project supports one.
 | **[pgagroal](https://github.com/pgagroal/pgagroal)** | Memory-safety fixes cross-ported at the lead maintainer's request | **8 merged** |
 | **[grass](https://github.com/OSGeo/grass)** | Null pointer dereference in the vector library, a null *function pointer* crash in `v.to.rast`, 64-bit cell counters, and unbounded environment growth in the runtime setup | **1 merged** · 6 open |
 | **[pgexporter](https://github.com/pgexporter/pgexporter)** | Memory-safety fixes cross-ported at the lead maintainer's request | 6 open |
-| **[website](https://github.com/kubernetes/website)** | Docs fixes, and a style guide section defining *deprecated* vs *no longer served* vs *removed* for APIs | **1 merged** · 4 open |
 | **[pgvictoria](https://github.com/pgvictoria/pgvictoria)** | Memory-safety fixes cross-ported at the lead maintainer's request | 5 open |
-| **[gnuradio](https://github.com/gnuradio/gnuradio)** | QA test covering the real-time scheduling bindings | **1 merged** · 1 open |
-| **[jabref](https://github.com/JabRef/jabref)** | Desktop app for managing BibTeX and BibLaTeX (.bib) libraries | **1 merged** · 1 open |
+| **[website](https://github.com/kubernetes/website)** | Docs fixes, and a style guide section defining *deprecated* vs *no longer served* vs *removed* for APIs | **1 merged** · 3 open |
+| **[gnuradio](https://github.com/gnuradio/gnuradio)** | QA test covering the real-time scheduling bindings | **2 merged** |
+| **[jabref](https://github.com/JabRef/jabref)** | Desktop app for managing BibTeX and BibLaTeX (.bib) libraries | **2 merged** |
 | **[source-controller](https://github.com/fluxcd/source-controller)** | Removed unsupported anonymous access for Azure buckets from the docs and code | 1 open |
 | **[Arbix](https://github.com/Pranav-error/Arbix)** | AI-powered cross-exchange arbitrage trading system on BNB Chain | 1 open |
 
