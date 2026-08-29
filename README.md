@@ -99,8 +99,8 @@ test where the project supports one.
 | **[website](https://github.com/kubernetes/website)** | Docs fixes, and a style guide section defining *deprecated* vs *no longer served* vs *removed* for APIs | **1 merged** · 3 open |
 | **[gnuradio](https://github.com/gnuradio/gnuradio)** | QA test covering the real-time scheduling bindings | **2 merged** |
 | **[jabref](https://github.com/JabRef/jabref)** | Desktop app for managing BibTeX and BibLaTeX (.bib) libraries | **2 merged** |
+| **[pymc](https://github.com/pymc-devs/pymc)** | Bayesian Modeling and Probabilistic Programming in Python | 2 open |
 | **[source-controller](https://github.com/fluxcd/source-controller)** | Removed unsupported anonymous access for Azure buckets from the docs and code | 1 open |
-| **[Arbix](https://github.com/Pranav-error/Arbix)** | AI-powered cross-exchange arbitrage trading system on BNB Chain | 1 open |
 
 </div>
 
