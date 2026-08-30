@@ -94,13 +94,13 @@ test where the project supports one.
 | **[pgmoneta](https://github.com/pgmoneta/pgmoneta)** | Double frees, use-after-free, unchecked allocations, an off-by-one stack overflow, and a baseline-gated cppcheck CI job | **11 merged** · 3 open |
 | **[pgagroal](https://github.com/pgagroal/pgagroal)** | Memory-safety fixes cross-ported at the lead maintainer's request | **8 merged** |
 | **[grass](https://github.com/OSGeo/grass)** | Null pointer dereference in the vector library, a null *function pointer* crash in `v.to.rast`, 64-bit cell counters, and unbounded environment growth in the runtime setup | **1 merged** · 6 open |
-| **[pgexporter](https://github.com/pgexporter/pgexporter)** | Memory-safety fixes cross-ported at the lead maintainer's request | 6 open |
+| **[pgexporter](https://github.com/pgexporter/pgexporter)** | Memory-safety fixes cross-ported at the lead maintainer's request | 7 open |
 | **[pgvictoria](https://github.com/pgvictoria/pgvictoria)** | Memory-safety fixes cross-ported at the lead maintainer's request | 5 open |
 | **[website](https://github.com/kubernetes/website)** | Docs fixes, and a style guide section defining *deprecated* vs *no longer served* vs *removed* for APIs | **1 merged** · 3 open |
 | **[gnuradio](https://github.com/gnuradio/gnuradio)** | QA test covering the real-time scheduling bindings | **2 merged** |
 | **[jabref](https://github.com/JabRef/jabref)** | Desktop app for managing BibTeX and BibLaTeX (.bib) libraries | **2 merged** |
-| **[pymc](https://github.com/pymc-devs/pymc)** | Bayesian Modeling and Probabilistic Programming in Python | 2 open |
 | **[source-controller](https://github.com/fluxcd/source-controller)** | Removed unsupported anonymous access for Azure buckets from the docs and code | 1 open |
+| **[Arbix](https://github.com/Pranav-error/Arbix)** | AI-powered cross-exchange arbitrage trading system on BNB Chain | 1 open |
 
 </div>
 
