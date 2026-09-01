@@ -91,13 +91,13 @@ test where the project supports one.
 
 | Project | Contribution | Status |
 |:--|:--|:--|
-| **[pgmoneta](https://github.com/pgmoneta/pgmoneta)** | Double frees, use-after-free, unchecked allocations, an off-by-one stack overflow, and a baseline-gated cppcheck CI job | **11 merged** · 4 open |
+| **[pgmoneta](https://github.com/pgmoneta/pgmoneta)** | Double frees, use-after-free, unchecked allocations, an off-by-one stack overflow, and a baseline-gated cppcheck CI job | **11 merged** · 5 open |
 | **[pgagroal](https://github.com/pgagroal/pgagroal)** | Memory-safety fixes cross-ported at the lead maintainer's request | **8 merged** |
 | **[grass](https://github.com/OSGeo/grass)** | Null pointer dereference in the vector library, a null *function pointer* crash in `v.to.rast`, 64-bit cell counters, and unbounded environment growth in the runtime setup | **1 merged** · 6 open |
 | **[pgexporter](https://github.com/pgexporter/pgexporter)** | Memory-safety fixes cross-ported at the lead maintainer's request | 7 open |
 | **[pgvictoria](https://github.com/pgvictoria/pgvictoria)** | Memory-safety fixes cross-ported at the lead maintainer's request | 5 open |
+| **[jabref](https://github.com/JabRef/jabref)** | Desktop app for managing BibTeX and BibLaTeX (.bib) libraries | **3 merged** · 1 open |
 | **[website](https://github.com/kubernetes/website)** | Docs fixes, and a style guide section defining *deprecated* vs *no longer served* vs *removed* for APIs | **1 merged** · 3 open |
-| **[jabref](https://github.com/JabRef/jabref)** | Desktop app for managing BibTeX and BibLaTeX (.bib) libraries | **2 merged** · 1 open |
 | **[gnuradio](https://github.com/gnuradio/gnuradio)** | QA test covering the real-time scheduling bindings | **2 merged** |
 | **[source-controller](https://github.com/fluxcd/source-controller)** | Removed unsupported anonymous access for Azure buckets from the docs and code | 1 open |
 | **[Arbix](https://github.com/Pranav-error/Arbix)** | AI-powered cross-exchange arbitrage trading system on BNB Chain | 1 open |
