@@ -4,12 +4,16 @@ on:
   schedule:
     - cron: "0 18 * * *"   # runs daily at 18:00 UTC
   workflow_dispatch:        # allows manual trigger
-  push:
-    branches:
-      - main
+  # No push trigger. The graph is built from contribution API data, not from
+  # anything in this repository, so rebuilding it on every commit only burned
+  # CI minutes and raced the contributions-table workflow for the same branch.
 
 permissions:
   contents: write
+
+concurrency:
+  group: 3d-contrib
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -26,8 +30,30 @@ jobs:
 
       - name: Commit and push generated files
         run: |
+          git add -A .
+
+          # Was --allow-empty, which committed on every run even when the
+          # graph had not changed.
+          if git diff --cached --quiet; then
+            echo "no change"
+            exit 0
+          fi
+
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add -A .
-          git commit -m "Update 3D contribution graph" --allow-empty
-          git push
+          git commit -m "Update 3D contribution graph"
+
+          # main can move between checkout and push, so rebase and retry
+          # instead of failing and leaving the graph a day stale.
+          for attempt in 1 2 3 4 5; do
+            if git push; then
+              echo "pushed on attempt ${attempt}"
+              exit 0
+            fi
+            echo "push rejected, rebasing and retrying (attempt ${attempt})"
+            git pull --rebase origin main || exit 1
+            sleep $((attempt * 3))
+          done
+
+          echo "still could not push after 5 attempts"
+          exit 1

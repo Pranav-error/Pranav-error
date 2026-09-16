@@ -4,9 +4,15 @@ on:
   schedule:
     - cron: "0 0 * * *"   # runs every day at midnight
   workflow_dispatch:        # allows manual trigger
-  push:
-    branches:
-      - main
+  # No push trigger. The animation is built from contribution API data, not
+  # from anything in this repository, so rebuilding it on every commit only
+  # burned CI minutes.
+
+# Pushes to the output branch rather than main, so it cannot race the
+# contributions table. Grouped anyway so two runs cannot clobber each other.
+concurrency:
+  group: snake
+  cancel-in-progress: false
 
 jobs:
   generate:
