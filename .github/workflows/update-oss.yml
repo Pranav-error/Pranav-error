@@ -11,6 +11,12 @@ on:
       - scripts/update_oss.py
       - .github/workflows/update-oss.yml
 
+# Two runs of this workflow must not push at the same time. Queue instead of
+# cancelling, so a run that has already rebuilt the table still gets to commit.
+concurrency:
+  group: update-oss
+  cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -29,12 +35,28 @@ jobs:
 
       - name: Commit if it changed
         run: |
-          if [ -n "$(git status --porcelain README.md)" ]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add README.md
-            git commit -m "Update open source contributions table"
-            git push
-          else
+          if [ -z "$(git status --porcelain README.md)" ]; then
             echo "no change"
+            exit 0
           fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "Update open source contributions table"
+
+          # The snake and 3d-contrib workflows also push to main, so the branch
+          # can move between checkout and push. Rebase onto whatever landed and
+          # try again rather than failing and leaving the table stale for a day.
+          for attempt in 1 2 3 4 5; do
+            if git push; then
+              echo "pushed on attempt ${attempt}"
+              exit 0
+            fi
+            echo "push rejected, rebasing and retrying (attempt ${attempt})"
+            git pull --rebase origin main || exit 1
+            sleep $((attempt * 3))
+          done
+
+          echo "still could not push after 5 attempts"
+          exit 1
