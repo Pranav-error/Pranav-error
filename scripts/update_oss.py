@@ -30,14 +30,16 @@ _LANDED_CACHE = {}
 # What the work in a repository actually was. Repositories without an entry
 # fall back to their own GitHub description, so a new project still shows up.
 NOTES = {
-    "pgmoneta/pgmoneta": "Double frees, use-after-free, unchecked allocations, an off-by-one stack overflow, and a baseline-gated cppcheck CI job",
+    "pgmoneta/pgmoneta": "Double frees, use-after-free, unchecked allocations, an off-by-one stack overflow, error-path null dereferences, and corner-case tests for the core string helpers",
     "kubernetes/website": "Docs fixes, and a style guide section defining *deprecated* vs *no longer served* vs *removed* for APIs",
     "OSGeo/grass": "Null pointer dereference in the vector library, a null *function pointer* crash in `v.to.rast`, 64-bit cell counters, and unbounded environment growth in the runtime setup",
-    "pgagroal/pgagroal": "Memory-safety fixes cross-ported at the lead maintainer's request",
-    "pgexporter/pgexporter": "Memory-safety fixes cross-ported at the lead maintainer's request",
-    "pgvictoria/pgvictoria": "Memory-safety fixes cross-ported at the lead maintainer's request",
+    "pgagroal/pgagroal": "An unbounded `strcat` stack overflow in the CLI, unchecked reallocs, and silent truncation in the numeric append helpers — found by writing the corner-case tests",
+    "pgexporter/pgexporter": "Unchecked allocations in the YAML and network paths, plus a kqueue accept-drain fix ported from pgagroal",
+    "pgvictoria/pgvictoria": "Cross-ported allocation checks and string-helper fixes, with corner-case tests for the append family",
     "fluxcd/source-controller": "Removed unsupported anonymous access for Azure buckets from the docs and code",
-    "gnuradio/gnuradio": "QA test covering the real-time scheduling bindings",
+    "fluxcd/flux2": "Removed dead fields from the install flags",
+    "gnuradio/gnuradio": "QA test for the real-time scheduling bindings, and float-tolerance fixes for two numeric tests that compared approximations for bit equality",
+    "JabRef/jabref": "Repaired fetcher tests that broke when upstream metadata services changed their responses",
     "Sakram-Arch/simulation": "Removed credentials that were committed to the repository, and fixed the migration integration tests",
 }
 
