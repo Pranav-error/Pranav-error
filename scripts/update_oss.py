@@ -10,6 +10,10 @@ were landed by hand. Some maintainers rebase a contribution onto the default
 branch themselves and then close the pull request, which leaves merged_at unset
 even though the work shipped; those are recovered by looking for the commit
 subjects on the default branch.
+
+Run this from the workflow, not by hand. The search API returns whatever the
+token can see, so a personal token pulls in private repositories and writes
+their names into a public README. The workflow token only sees public ones.
 """
 
 import json
