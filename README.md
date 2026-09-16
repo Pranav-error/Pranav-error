@@ -91,15 +91,15 @@ test where the project supports one.
 
 | Project | Contribution | Status |
 |:--|:--|:--|
-| **[pgmoneta](https://github.com/pgmoneta/pgmoneta)** | Double frees, use-after-free, unchecked allocations, an off-by-one stack overflow, and a baseline-gated cppcheck CI job | **18 merged** · 7 open |
-| **[pgagroal](https://github.com/pgagroal/pgagroal)** | Memory-safety fixes cross-ported at the lead maintainer's request | **14 merged** · 3 open |
-| **[pgvictoria](https://github.com/pgvictoria/pgvictoria)** | Memory-safety fixes cross-ported at the lead maintainer's request | **7 merged** · 3 open |
-| **[pgexporter](https://github.com/pgexporter/pgexporter)** | Memory-safety fixes cross-ported at the lead maintainer's request | 10 open |
+| **[pgmoneta](https://github.com/pgmoneta/pgmoneta)** | Double frees, use-after-free, unchecked allocations, an off-by-one stack overflow, error-path null dereferences, and corner-case tests for the core string helpers | **18 merged** · 7 open |
+| **[pgagroal](https://github.com/pgagroal/pgagroal)** | An unbounded `strcat` stack overflow in the CLI, unchecked reallocs, and silent truncation in the numeric append helpers — found by writing the corner-case tests | **14 merged** · 3 open |
+| **[pgvictoria](https://github.com/pgvictoria/pgvictoria)** | Cross-ported allocation checks and string-helper fixes, with corner-case tests for the append family | **7 merged** · 3 open |
+| **[pgexporter](https://github.com/pgexporter/pgexporter)** | Unchecked allocations in the YAML and network paths, plus a kqueue accept-drain fix ported from pgagroal | 10 open |
 | **[grass](https://github.com/OSGeo/grass)** | Null pointer dereference in the vector library, a null *function pointer* crash in `v.to.rast`, 64-bit cell counters, and unbounded environment growth in the runtime setup | **1 merged** · 6 open |
 | **[website](https://github.com/kubernetes/website)** | Docs fixes, and a style guide section defining *deprecated* vs *no longer served* vs *removed* for APIs | **2 merged** · 2 open |
-| **[jabref](https://github.com/JabRef/jabref)** | Desktop app for managing BibTeX and BibLaTeX (.bib) libraries | **3 merged** |
-| **[gnuradio](https://github.com/gnuradio/gnuradio)** | QA test covering the real-time scheduling bindings | **2 merged** · 1 open |
-| **[flux2](https://github.com/fluxcd/flux2)** | Open and extensible continuous delivery solution for Kubernetes. Powered by GitOps Toolkit. | 1 open |
+| **[jabref](https://github.com/JabRef/jabref)** | Repaired fetcher tests that broke when upstream metadata services changed their responses | **3 merged** |
+| **[gnuradio](https://github.com/gnuradio/gnuradio)** | QA test for the real-time scheduling bindings, and float-tolerance fixes for two numeric tests that compared approximations for bit equality | **2 merged** · 1 open |
+| **[flux2](https://github.com/fluxcd/flux2)** | Removed dead fields from the install flags | 1 open |
 | **[source-controller](https://github.com/fluxcd/source-controller)** | Removed unsupported anonymous access for Azure buckets from the docs and code | 1 open |
 
 </div>
