@@ -53,6 +53,12 @@ Upstream work on C and Python projects — mostly memory-safety and correctness 
 
 ---
 
+## Writing
+
+- **[Two stack overflows hiding in plain sight](https://dev.to/pranav-error/two-stack-overflows-hiding-in-plain-sight-1on2)** — a `strcat` into 512 bytes in pgagroal and a `"%.8f"` into 30 bytes in GRASS GIS: how I found them, proved them, and picked the fix each project would accept.
+
+---
+
 ## Featured projects
 
 <table>
