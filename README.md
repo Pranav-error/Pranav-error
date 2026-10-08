@@ -135,7 +135,7 @@ All 40+ projects, grouped by area: **[saipranav.me](https://saipranav.me)** — 
 
 <div align="center">
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=pranav-error&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&column=7)](https://github.com/ryo-ma/github-profile-trophy)
+[![trophy](https://trophy.ryglcloud.net/?username=pranav-error&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&column=7)](https://github.com/ryo-ma/github-profile-trophy)
 
 </div>
 
