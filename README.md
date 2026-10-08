@@ -113,6 +113,12 @@ All 40+ projects, grouped by area: **[saipranav.me](https://saipranav.me)** — 
 
 <div align="center">
 
+<img src="https://github-readme-stats.vercel.app/api?username=pranav-error&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&show_icons=true&rank_icon=github&cache_seconds=86400" height="180"/>
+&nbsp;&nbsp;
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=pranav-error&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&layout=compact&cache_seconds=86400" height="180"/>
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=pranav-error&theme=tokyonight&hide_border=true" width="70%"/>
+
 <img src="https://raw.githubusercontent.com/Pranav-error/Pranav-error/main/profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D contribution graph"/>
 
 <picture>
