@@ -32,13 +32,13 @@ jobs:
         uses: Erik-Donath/github-profile-trophy@feature/generate-svg
         with:
           username: ${{ github.repository_owner }}
-          output_path: trophy.svg
+          file: trophy.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           theme: tokyonight
           no-frame: true
-          no-bg: true
-          margin-w: 6
-          column: 7
+          no-background: true
+          margin-width: 6
+          max-cols: 7
 
       - name: Commit and push if changed
         run: |
