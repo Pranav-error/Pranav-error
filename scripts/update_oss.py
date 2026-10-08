@@ -5,11 +5,20 @@ GitHub, groups them by repository and rewrites the block between the
 OSS:START and OSS:END markers. New projects appear on their own, so the table
 keeps up without being edited by hand.
 
-A pull request counts as merged when GitHub says so, and also when its commits
-were landed by hand. Some maintainers rebase a contribution onto the default
-branch themselves and then close the pull request, which leaves merged_at unset
-even though the work shipped; those are recovered by looking for the commit
-subjects on the default branch.
+"Merged" is counted as commits GitHub attributes to this account on a repo's
+default branch (GET /repos/{repo}/commits?author=USER) — not PR merge status.
+Several maintainers (pgmoneta, pgagroal, ...) apply patches by hand (rebase,
+cherry-pick, git am) and close the PR without using the merge button, so a PR
+search undercounts real landed work; the commit itself is the ground truth
+regardless of how it got there. This matches what GitHub's own contribution
+graph shows for that repo.
+
+Verified 2026-10-08: the previous approach here (matching a PR's own commits
+against a `search/commits?q=repo:X+author:Y` listing) silently missed 26 of
+pgmoneta's merged patches after a maintainer merge wave — that search
+endpoint doesn't reliably resolve hand-landed/rebased commits back to the
+author, while the direct `?author=` commits endpoint does. Don't revert to
+PR-search-based "merged" counting without re-verifying against this endpoint.
 
 Run this from the workflow, not by hand. The search API returns whatever the
 token can see, so a personal token pulls in private repositories and writes
@@ -18,8 +27,8 @@ their names into a public README. The workflow token only sees public ones.
 
 import json
 import os
-import re
 import urllib.error
+import urllib.parse
 import urllib.request
 
 USER = os.environ.get("OSS_USER", "Pranav-error")
@@ -28,8 +37,16 @@ README = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))
 START, END = "<!-- OSS:START -->", "<!-- OSS:END -->"
 MAX_ROWS = 10
 
-# repo -> commit subjects on its default branch, filled in on first use.
-_LANDED_CACHE = {}
+# Own repos and friends'/internship repos aren't "contributions to open source" even
+# when they have real merged commits counted the same reliable way.
+EXCLUDE = {
+    "Sakram-Arch/simulation",
+    "Patel-Muhammad/name-pr",
+    "PritamP20/HackSprint",
+    "DotDev-Club/DotDev",
+    "chiraghontec/qnit-customer-discovery",
+}
+EXCLUDE_OWNERS = {USER, "Site-Analysis"}
 
 # What the work in a repository actually was. Repositories without an entry
 # fall back to their own GitHub description, so a new project still shows up.
@@ -56,49 +73,28 @@ def api(url):
         return json.load(response)
 
 
-def landed_subjects(repo):
-    """Commit subjects authored by USER on the default branch of a repository."""
-    if repo not in _LANDED_CACHE:
-        subjects = set()
-        try:
-            result = api(
-                "https://api.github.com/search/commits"
-                f"?q=repo%3A{repo}+author%3A{USER}&per_page=100"
-            )
-            for item in result.get("items", []):
-                message = (item.get("commit") or {}).get("message", "")
-                subject = message.splitlines()[0].strip() if message else ""
-                if subject:
-                    subjects.add(subject)
-        except (urllib.error.URLError, ValueError):
-            # Leave the set empty rather than failing the run: the worst case is
-            # the old behaviour, where a hand-landed pull request is not counted.
-            pass
-        _LANDED_CACHE[repo] = subjects
-    return _LANDED_CACHE[repo]
+def landed_commit_count(repo):
+    """Commits GitHub attributes to USER on repo's default branch — the real
+    "merged" count, however the commit actually got there."""
+    n, page = 0, 1
+    while True:
+        items = api(f"https://api.github.com/repos/{repo}/commits?author={USER}&per_page=100&page={page}")
+        n += len(items)
+        if len(items) < 100 or page >= 10:
+            return n
+        page += 1
 
 
-def was_landed_by_hand(repo, number):
-    """True when a closed, unmerged pull request's commits are on the default branch."""
-    subjects = landed_subjects(repo)
-    if not subjects:
-        return False
-    try:
-        commits = api(f"https://api.github.com/repos/{repo}/pulls/{number}/commits?per_page=100")
-    except (urllib.error.URLError, ValueError):
-        return False
-    for commit in commits:
-        message = (commit.get("commit") or {}).get("message", "")
-        subject = message.splitlines()[0].strip() if message else ""
-        if subject and subject in subjects:
-            return True
-    return False
+def open_pr_count(repo):
+    res = api("https://api.github.com/search/issues?q="
+              + urllib.parse.quote(f"repo:{repo} author:{USER} is:pr is:open"))
+    return res.get("total_count", 0)
 
 
-def collect():
-    """Return {repo: {"merged": n, "open": n}} for every repo with a PR."""
-    repos = {}
-    page = 1
+def discover_repos():
+    """Every repo with at least one PR by USER — just used to find candidates;
+    merged counts come from landed_commit_count, not PR state."""
+    repos, page = set(), 1
     while True:
         result = api(
             "https://api.github.com/search/issues"
@@ -107,16 +103,28 @@ def collect():
         items = result.get("items", [])
         for item in items:
             repo = item["repository_url"].split("/repos/", 1)[1]
-            counts = repos.setdefault(repo, {"merged": 0, "open": 0})
-            if (item.get("pull_request") or {}).get("merged_at"):
-                counts["merged"] += 1
-            elif item["state"] == "open":
-                counts["open"] += 1
-            elif was_landed_by_hand(repo, item["number"]):
-                counts["merged"] += 1
+            if repo not in EXCLUDE and repo.split("/")[0] not in EXCLUDE_OWNERS:
+                repos.add(repo)
         if len(items) < 100:
             break
         page += 1
+    return repos
+
+
+def collect():
+    """Return {repo: {"merged": n, "open": n}} for every repo with a PR."""
+    repos = {}
+    for repo in discover_repos():
+        try:
+            merged = landed_commit_count(repo)
+        except (urllib.error.URLError, ValueError):
+            continue  # unreachable or rate-limited this run; try again next run rather than report 0
+        try:
+            open_n = open_pr_count(repo)
+        except (urllib.error.URLError, ValueError):
+            open_n = 0
+        if merged or open_n:
+            repos[repo] = {"merged": merged, "open": open_n}
     return repos
 
 
@@ -177,6 +185,7 @@ def main():
         readme = handle.read()
     if START not in readme or END not in readme:
         raise SystemExit("markers not found in README.md")
+    import re
     updated = re.sub(
         re.escape(START) + r".*?" + re.escape(END),
         lambda _: build(collect()),
