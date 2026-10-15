@@ -36,16 +36,16 @@ Upstream work on C and Python projects — mostly memory-safety and correctness 
 
 | Project | Contribution | Status |
 |:--|:--|:--|
-| **[pgmoneta](https://github.com/pgmoneta/pgmoneta)** | Double frees, use-after-free, unchecked allocations, an off-by-one stack overflow, error-path null dereferences, and corner-case tests for the core string helpers | **73 merged** · 6 open |
+| **[pgmoneta](https://github.com/pgmoneta/pgmoneta)** | Double frees, use-after-free, unchecked allocations, an off-by-one stack overflow, error-path null dereferences, and corner-case tests for the core string helpers | **73 merged** · 7 open |
 | **[pgagroal](https://github.com/pgagroal/pgagroal)** | An unbounded `strcat` stack overflow in the CLI, unchecked reallocs, and silent truncation in the numeric append helpers — found by writing the corner-case tests | **15 merged** · 7 open |
 | **[pgvictoria](https://github.com/pgvictoria/pgvictoria)** | Cross-ported allocation checks and string-helper fixes, with corner-case tests for the append family | **17 merged** · 1 open |
 | **[pgexporter](https://github.com/pgexporter/pgexporter)** | Unchecked allocations in the YAML and network paths, plus a kqueue accept-drain fix ported from pgagroal | **13 merged** · 3 open |
 | **[grass](https://github.com/OSGeo/grass)** | Null pointer dereference in the vector library, a null *function pointer* crash in `v.to.rast`, 64-bit cell counters, and unbounded environment growth in the runtime setup | **5 merged** · 5 open |
 | **[gnuradio](https://github.com/gnuradio/gnuradio)** | QA test for the real-time scheduling bindings, and float-tolerance fixes for two numeric tests that compared approximations for bit equality | **2 merged** · 2 open |
 | **[website](https://github.com/kubernetes/website)** | Docs fixes, and a style guide section defining *deprecated* vs *no longer served* vs *removed* for APIs | **2 merged** · 2 open |
+| **[creature-hq](https://github.com/SJ-glitch10/creature-hq)** | Learn fullstack web development and raise a creature. A roadmap game with Firebase auth and cloud saves. | 4 open |
 | **[jabref](https://github.com/JabRef/jabref)** | Repaired fetcher tests that broke when upstream metadata services changed their responses | **3 merged** |
 | **[pgmoneta_ext](https://github.com/pgmoneta/pgmoneta_ext)** | PostgreSQL extension for pgmoneta | **3 merged** |
-| **[hiring-agent](https://github.com/interviewstreet/hiring-agent)** | AI agent to evaluate and score resumes. | 2 open |
 
 </div>
 
