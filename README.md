@@ -42,7 +42,7 @@ Upstream work on C and Python projects — mostly memory-safety and correctness 
 | **[pgexporter](https://github.com/pgexporter/pgexporter)** | Unchecked allocations in the YAML and network paths, plus a kqueue accept-drain fix ported from pgagroal | **15 merged** · 1 open |
 | **[grass](https://github.com/OSGeo/grass)** | Null pointer dereference in the vector library, a null *function pointer* crash in `v.to.rast`, 64-bit cell counters, and unbounded environment growth in the runtime setup | **5 merged** · 5 open |
 | **[creature-hq](https://github.com/SJ-glitch10/creature-hq)** | Learn fullstack web development and raise a creature. A roadmap game with Firebase auth and cloud saves. | **3 merged** · 5 open |
-| **[gnuradio](https://github.com/gnuradio/gnuradio)** | QA test for the real-time scheduling bindings, and float-tolerance fixes for two numeric tests that compared approximations for bit equality | **2 merged** · 2 open |
+| **[gnuradio](https://github.com/gnuradio/gnuradio)** | QA test for the real-time scheduling bindings, and float-tolerance fixes for two numeric tests that compared approximations for bit equality | **3 merged** · 1 open |
 | **[website](https://github.com/kubernetes/website)** | Docs fixes, and a style guide section defining *deprecated* vs *no longer served* vs *removed* for APIs | **2 merged** · 2 open |
 | **[jabref](https://github.com/JabRef/jabref)** | Repaired fetcher tests that broke when upstream metadata services changed their responses | **3 merged** |
 | **[pgmoneta_ext](https://github.com/pgmoneta/pgmoneta_ext)** | PostgreSQL extension for pgmoneta | **3 merged** |
