@@ -37,9 +37,9 @@ Upstream work on C and Python projects — mostly memory-safety and correctness 
 | Project | Contribution | Status |
 |:--|:--|:--|
 | **[pgmoneta](https://github.com/pgmoneta/pgmoneta)** | Double frees, use-after-free, unchecked allocations, an off-by-one stack overflow, error-path null dereferences, and corner-case tests for the core string helpers | **84 merged** · 15 open |
-| **[pgagroal](https://github.com/pgagroal/pgagroal)** | An unbounded `strcat` stack overflow in the CLI, unchecked reallocs, and silent truncation in the numeric append helpers — found by writing the corner-case tests | **15 merged** · 8 open |
+| **[pgagroal](https://github.com/pgagroal/pgagroal)** | An unbounded `strcat` stack overflow in the CLI, unchecked reallocs, and silent truncation in the numeric append helpers — found by writing the corner-case tests | **15 merged** · 10 open |
 | **[pgvictoria](https://github.com/pgvictoria/pgvictoria)** | Cross-ported allocation checks and string-helper fixes, with corner-case tests for the append family | **17 merged** · 2 open |
-| **[pgexporter](https://github.com/pgexporter/pgexporter)** | Unchecked allocations in the YAML and network paths, plus a kqueue accept-drain fix ported from pgagroal | **15 merged** · 3 open |
+| **[pgexporter](https://github.com/pgexporter/pgexporter)** | Unchecked allocations in the YAML and network paths, plus a kqueue accept-drain fix ported from pgagroal | **15 merged** · 4 open |
 | **[grass](https://github.com/OSGeo/grass)** | Null pointer dereference in the vector library, a null *function pointer* crash in `v.to.rast`, 64-bit cell counters, and unbounded environment growth in the runtime setup | **5 merged** · 5 open |
 | **[creature-hq](https://github.com/SJ-glitch10/creature-hq)** | Learn fullstack web development and raise a creature. A roadmap game with Firebase auth and cloud saves. | **3 merged** · 5 open |
 | **[hiring-agent](https://github.com/interviewstreet/hiring-agent)** | AI agent to evaluate and score resumes. | 5 open |
