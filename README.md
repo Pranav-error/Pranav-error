@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1f6feb,100:58a6ff&height=200&section=header&text=Sai%20Pranav&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Software%20Engineer%20%7C%20PostgreSQL%20%26%20systems%20C%20%7C%20Open%20source&descAlignY=60&descSize=18" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1f6feb,100:58a6ff&height=200&section=header&text=Sai%20Pranav&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Software%20Engineer%20%7C%20PostgreSQL%20and%20systems%20C%20%7C%20Open%20source&descAlignY=60&descSize=18" width="100%"/>
 
 <a href="https://saipranav.me">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=58A6FF&center=true&vCenter=true&random=false&width=640&lines=SDE+Intern+%40+Cepheid+(Danaher);PostgreSQL+core+contributor;175%2B+patches+merged+in+the+PostgreSQL+ecosystem;Backup+and+recovery+correctness" alt="Typing SVG" />
