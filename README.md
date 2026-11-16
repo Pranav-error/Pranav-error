@@ -1,9 +1,9 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1f6feb,100:58a6ff&height=200&section=header&text=Sai%20Pranav&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Software%20Engineer%20%7C%20Open-source%20C%20%7C%20AI%2FML&descAlignY=60&descSize=18" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1f6feb,100:58a6ff&height=200&section=header&text=Sai%20Pranav&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Software%20Engineer%20%7C%20PostgreSQL%20%26%20systems%20C%20%7C%20Open%20source&descAlignY=60&descSize=18" width="100%"/>
 
 <a href="https://saipranav.me">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=58A6FF&center=true&vCenter=true&random=false&width=640&lines=SDE+Intern+%40+Cepheid+(Danaher);50%2B+patches+merged+upstream+in+C;Hunting+memory+bugs+in+PostgreSQL+tooling;Building+tools+developers+actually+use" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=58A6FF&center=true&vCenter=true&random=false&width=640&lines=SDE+Intern+%40+Cepheid+(Danaher);PostgreSQL+core+contributor;175%2B+patches+merged+in+the+PostgreSQL+ecosystem;Backup+and+recovery+correctness" alt="Typing SVG" />
 </a>
 
 [![Portfolio](https://img.shields.io/badge/saipranav.me-000000?style=for-the-badge&logo=googlechrome&logoColor=white)](https://saipranav.me)
@@ -12,13 +12,19 @@
 
 </div>
 
-I'm a final-year CS student at REVA University (Bengaluru) and an SDE intern on the manufacturing-systems team at Cepheid (Danaher). Most of my spare time goes into open-source C: reading unfamiliar codebases, finding memory-safety and correctness bugs, and getting the fixes merged with a reproduction attached.
+I'm a final-year CS student at REVA University (Bengaluru) and an SDE intern on the manufacturing-systems team at Cepheid (Danaher). Most of my spare time goes into open source, mainly PostgreSQL backup and recovery: reading unfamiliar codebases, finding correctness bugs, and getting the fixes merged with a reproduction and a test attached.
 
 ---
 
 ## Open source
 
-Upstream work on C and Python projects — mostly memory-safety and correctness fixes, each with a reproduction and a regression test where the project supports one.
+Correctness fixes, each with a reproduction and a regression test where the project supports one.
+
+**Highlights**
+
+- **PostgreSQL core:** author of [*Reject incremental backups based on a backup from a divergent history*](https://git.postgresql.org/gitweb/?p=postgresql.git;a=commit;h=316861101e8) (master, back-patched to 17 and 18). After a failover, an incremental backup could be combined with pages from the abandoned timeline.
+- **pgmoneta:** 120+ commits, and the deep `verify` for incremental backup chains: it reconstructs the chain and checks page checksums, the visibility map and every backup it depends on, without a full restore. Triage role on the pg-family repositories.
+- **Also contributing to:** [Bitcoin Core](https://github.com/bitcoin/bitcoin/pulls?q=author%3APranav-error) (RPC tests), [GStreamer](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests?author_username=rajasaipranav0) (tag demuxing fix and tests), [Vitess](https://github.com/vitessio/vitess/pulls?q=author%3APranav-error) and [etcd](https://github.com/etcd-io/etcd/pulls?q=author%3APranav-error).
 
 <div align="center">
 

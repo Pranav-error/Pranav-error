@@ -35,7 +35,7 @@ USER = os.environ.get("OSS_USER", "Pranav-error")
 TOKEN = os.environ.get("GITHUB_TOKEN")
 README = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "README.md")
 START, END = "<!-- OSS:START -->", "<!-- OSS:END -->"
-MAX_ROWS = 10
+MAX_ROWS = 14
 
 # Own repos and friends'/internship repos aren't "contributions to open source" even
 # when they have real merged commits counted the same reliable way.
@@ -45,13 +45,19 @@ EXCLUDE = {
     "PritamP20/HackSprint",
     "DotDev-Club/DotDev",
     "chiraghontec/qnit-customer-discovery",
+    "SJ-glitch10/creature-hq",
 }
 EXCLUDE_OWNERS = {USER, "Site-Analysis"}
 
 # What the work in a repository actually was. Repositories without an entry
 # fall back to their own GitHub description, so a new project still shows up.
 NOTES = {
-    "pgmoneta/pgmoneta": "Double frees, use-after-free, unchecked allocations, an off-by-one stack overflow, error-path null dereferences, and corner-case tests for the core string helpers",
+    "pgmoneta/pgmoneta": "Deep `verify` for incremental backup chains (reconstruct, page checksums, visibility map, every backup in the chain), PostgreSQL 14-16 incremental fixes, and memory-safety fixes across the codebase",
+    "bitcoin/bitcoin": "Functional tests for untested RPC error paths (`joinpsbts`, `scantxoutset`), found by cross-referencing every RPC error string against the test suite",
+    "vitessio/vitess": "Integer `DIV` and `*` overflow bugs in the evaluation engine, checked against MySQL 8.4",
+    "etcd-io/etcd": "`etcdutl snapshot restore` left a half-written data dir behind on failure; plus tighter error assertions in lease tests",
+    "IvorySQL/IvorySQL": "Found that a default `pg_upgrade` fails on Oracle-mode clusters with object types; reviews of Oracle-compatibility fixes",
+    "openMF/mifos-gazelle": "Helm version pinned far outside the supported Kubernetes range, and a config key that had no effect",
     "kubernetes/website": "Docs fixes, and a style guide section defining *deprecated* vs *no longer served* vs *removed* for APIs",
     "OSGeo/grass": "Null pointer dereference in the vector library, a null *function pointer* crash in `v.to.rast`, 64-bit cell counters, and unbounded environment growth in the runtime setup",
     "pgagroal/pgagroal": "An unbounded `strcat` stack overflow in the CLI, unchecked reallocs, and silent truncation in the numeric append helpers — found by writing the corner-case tests",
