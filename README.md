@@ -42,7 +42,7 @@ Correctness fixes, each with a reproduction and a regression test where the proj
 
 | Project | Contribution | Status |
 |:--|:--|:--|
-| **[pgmoneta](https://github.com/pgmoneta/pgmoneta)** | Deep `verify` for incremental backup chains (reconstruct, page checksums, visibility map, every backup in the chain), PostgreSQL 14-16 incremental fixes, and memory-safety fixes across the codebase | **128 merged** · 3 open |
+| **[pgmoneta](https://github.com/pgmoneta/pgmoneta)** | Deep `verify` for incremental backup chains (reconstruct, page checksums, visibility map, every backup in the chain), PostgreSQL 14-16 incremental fixes, and memory-safety fixes across the codebase | **128 merged** · 5 open |
 | **[pgagroal](https://github.com/pgagroal/pgagroal)** | An unbounded `strcat` stack overflow in the CLI, unchecked reallocs, and silent truncation in the numeric append helpers — found by writing the corner-case tests | **19 merged** · 7 open |
 | **[pgexporter](https://github.com/pgexporter/pgexporter)** | Unchecked allocations in the YAML and network paths, plus a kqueue accept-drain fix ported from pgagroal | **20 merged** |
 | **[pgvictoria](https://github.com/pgvictoria/pgvictoria)** | Cross-ported allocation checks and string-helper fixes, with corner-case tests for the append family | **20 merged** |
@@ -52,10 +52,10 @@ Correctness fixes, each with a reproduction and a regression test where the proj
 | **[jabref](https://github.com/JabRef/jabref)** | Repaired fetcher tests that broke when upstream metadata services changed their responses | **3 merged** |
 | **[pgmoneta_ext](https://github.com/pgmoneta/pgmoneta_ext)** | PostgreSQL extension for pgmoneta | **3 merged** |
 | **[website](https://github.com/kubernetes/website)** | Docs fixes, and a style guide section defining *deprecated* vs *no longer served* vs *removed* for APIs | **2 merged** · 1 open |
+| **[vitess](https://github.com/vitessio/vitess)** | Integer `DIV` and `*` overflow bugs in the evaluation engine, checked against MySQL 8.4 | 3 open |
 | **[cisys](https://github.com/mnemosyne-systems/cisys)** | Modern Continuous Integration System | **2 merged** |
+| **[orangu](https://github.com/mnemosyne-systems/orangu)** | Advanced AI platform | **2 merged** |
 | **[bitcoin](https://github.com/bitcoin/bitcoin)** | Functional tests for untested RPC error paths (`joinpsbts`, `scantxoutset`), found by cross-referencing every RPC error string against the test suite | 2 open |
-| **[etcd](https://github.com/etcd-io/etcd)** | `etcdutl snapshot restore` left a half-written data dir behind on failure; plus tighter error assertions in lease tests | 2 open |
-| **[mifos-gazelle](https://github.com/openMF/mifos-gazelle)** | Helm version pinned far outside the supported Kubernetes range, and a config key that had no effect | 2 open |
 
 </div>
 
