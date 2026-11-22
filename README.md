@@ -53,9 +53,9 @@ Correctness fixes, each with a reproduction and a regression test where the proj
 | **[jabref](https://github.com/JabRef/jabref)** | Repaired fetcher tests that broke when upstream metadata services changed their responses | **3 merged** |
 | **[pgmoneta_ext](https://github.com/pgmoneta/pgmoneta_ext)** | PostgreSQL extension for pgmoneta | **3 merged** |
 | **[website](https://github.com/kubernetes/website)** | Docs fixes, and a style guide section defining *deprecated* vs *no longer served* vs *removed* for APIs | **2 merged** · 1 open |
+| **[mifos-gazelle](https://github.com/openMF/mifos-gazelle)** | Helm version pinned far outside the supported Kubernetes range, and a config key that had no effect | 3 open |
 | **[vitess](https://github.com/vitessio/vitess)** | Integer `DIV` and `*` overflow bugs in the evaluation engine, checked against MySQL 8.4 | 3 open |
 | **[orangu](https://github.com/mnemosyne-systems/orangu)** | Advanced AI platform | **2 merged** |
-| **[bitcoin](https://github.com/bitcoin/bitcoin)** | Functional tests for untested RPC error paths (`joinpsbts`, `scantxoutset`), found by cross-referencing every RPC error string against the test suite | 2 open |
 
 </div>
 
