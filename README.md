@@ -42,20 +42,20 @@ Correctness fixes, each with a reproduction and a regression test where the proj
 
 | Project | Contribution | Status |
 |:--|:--|:--|
-| **[pgmoneta](https://github.com/pgmoneta/pgmoneta)** | Deep `verify` for incremental backup chains (reconstruct, page checksums, visibility map, every backup in the chain), PostgreSQL 14-16 incremental fixes, and memory-safety fixes across the codebase | **133 merged** · 2 open |
+| **[pgmoneta](https://github.com/pgmoneta/pgmoneta)** | Deep `verify` for incremental backup chains (reconstruct, page checksums, visibility map, every backup in the chain), PostgreSQL 14-16 incremental fixes, and memory-safety fixes across the codebase | **133 merged** · 3 open |
 | **[pgagroal](https://github.com/pgagroal/pgagroal)** | An unbounded `strcat` stack overflow in the CLI, unchecked reallocs, and silent truncation in the numeric append helpers — found by writing the corner-case tests | **19 merged** · 7 open |
+| **[pgvictoria](https://github.com/pgvictoria/pgvictoria)** | Cross-ported allocation checks and string-helper fixes, with corner-case tests for the append family | **20 merged** · 1 open |
 | **[pgexporter](https://github.com/pgexporter/pgexporter)** | Unchecked allocations in the YAML and network paths, plus a kqueue accept-drain fix ported from pgagroal | **20 merged** |
-| **[pgvictoria](https://github.com/pgvictoria/pgvictoria)** | Cross-ported allocation checks and string-helper fixes, with corner-case tests for the append family | **20 merged** |
 | **[grass](https://github.com/OSGeo/grass)** | Null pointer dereference in the vector library, a null *function pointer* crash in `v.to.rast`, 64-bit cell counters, and unbounded environment growth in the runtime setup | **5 merged** · 5 open |
+| **[vitess](https://github.com/vitessio/vitess)** | Integer `DIV` and `*` overflow bugs in the evaluation engine, checked against MySQL 8.4 | 7 open |
 | **[cisys](https://github.com/mnemosyne-systems/cisys)** | Modern Continuous Integration System | **6 merged** |
-| **[vitess](https://github.com/vitessio/vitess)** | Integer `DIV` and `*` overflow bugs in the evaluation engine, checked against MySQL 8.4 | 6 open |
+| **[etcd](https://github.com/etcd-io/etcd)** | `etcdutl snapshot restore` left a half-written data dir behind on failure; plus tighter error assertions in lease tests | 5 open |
 | **[hiring-agent](https://github.com/interviewstreet/hiring-agent)** | AI agent to evaluate and score resumes. | 5 open |
+| **[sktime](https://github.com/sktime/sktime)** | A unified framework for machine learning with time series | 5 open |
 | **[gnuradio](https://github.com/gnuradio/gnuradio)** | QA test for the real-time scheduling bindings, and float-tolerance fixes for two numeric tests that compared approximations for bit equality | **4 merged** |
-| **[etcd](https://github.com/etcd-io/etcd)** | `etcdutl snapshot restore` left a half-written data dir behind on failure; plus tighter error assertions in lease tests | 4 open |
 | **[jabref](https://github.com/JabRef/jabref)** | Repaired fetcher tests that broke when upstream metadata services changed their responses | **3 merged** |
 | **[pgmoneta_ext](https://github.com/pgmoneta/pgmoneta_ext)** | PostgreSQL extension for pgmoneta | **3 merged** |
 | **[website](https://github.com/kubernetes/website)** | Docs fixes, and a style guide section defining *deprecated* vs *no longer served* vs *removed* for APIs | **2 merged** · 1 open |
-| **[mifos-gazelle](https://github.com/openMF/mifos-gazelle)** | Helm version pinned far outside the supported Kubernetes range, and a config key that had no effect | 3 open |
 
 </div>
 
