@@ -42,7 +42,7 @@ Correctness fixes, each with a reproduction and a regression test where the proj
 
 | Project | Contribution | Status |
 |:--|:--|:--|
-| **[pgmoneta](https://github.com/pgmoneta/pgmoneta)** | Deep `verify` for incremental backup chains (reconstruct, page checksums, visibility map, every backup in the chain), PostgreSQL 14-16 incremental fixes, and memory-safety fixes across the codebase | **133 merged** · 4 open |
+| **[pgmoneta](https://github.com/pgmoneta/pgmoneta)** | Deep `verify` for incremental backup chains (reconstruct, page checksums, visibility map, every backup in the chain), PostgreSQL 14-16 incremental fixes, and memory-safety fixes across the codebase | **135 merged** · 2 open |
 | **[pgagroal](https://github.com/pgagroal/pgagroal)** | An unbounded `strcat` stack overflow in the CLI, unchecked reallocs, and silent truncation in the numeric append helpers — found by writing the corner-case tests | **19 merged** · 8 open |
 | **[pgvictoria](https://github.com/pgvictoria/pgvictoria)** | Cross-ported allocation checks and string-helper fixes, with corner-case tests for the append family | **20 merged** · 2 open |
 | **[pgexporter](https://github.com/pgexporter/pgexporter)** | Unchecked allocations in the YAML and network paths, plus a kqueue accept-drain fix ported from pgagroal | **20 merged** · 1 open |
